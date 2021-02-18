@@ -10,7 +10,7 @@ describe('Form Test', () => {
     cy.visit('/');
     cy.get('form').should('be.visible');
     cy.get('input[name="email"]').type(email).should('have.value', email);
-    cy.get('.alert-success').should('not.be.visible');
+    cy.get('.alert-success').should('not.exist');
   });
 });
 
@@ -22,7 +22,7 @@ describe('Form Test', () => {
     cy.get('form').should('be.visible');
     cy.get('input[name="email"]').type(email).should('have.value', email);
     cy.get('input[name="name"]').type(name).should('have.value', name);
-    cy.get('.alert-success').should('not.be.visible');
+    cy.get('.alert-success').should('not.exist');
   });
 });
 
@@ -33,7 +33,7 @@ describe('Form Test', () => {
       cy.get('form').should('be.visible');
       cy.get('input[name="email"]').type(email).should('have.value', email);
       cy.get('input[name="name"]').type(name).should('have.value', name);
-      cy.get('.alert-success').should('not.be.visible');
+      cy.get('.alert-success').should('not.exist');
     });
   });
 });

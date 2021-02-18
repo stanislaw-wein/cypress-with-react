@@ -6,7 +6,7 @@ describe('Submit Button Test', () => {
       .get('form').should('be.visible')
       .get('input[name="email"]').type(email)
       .get('input[name="name"]').type(name)
-      .get('.alert-success').should('not.be.visible')
+      .get('.alert-success').should('not.exist')
       .get('[data-cy=submit]').click()
       .get('.alert-success').should('be.visible', { timeout: 1000 })
       .get('.email').should('be.visible').and('contain', email)
