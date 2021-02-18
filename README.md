@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Medium Article 
+
+[Getting Started With cypress.io](https://medium.com/swlh/getting-started-with-cypress-io-e2c7068663ac)
+
 
 ## Available Scripts
 
